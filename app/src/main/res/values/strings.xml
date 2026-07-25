@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">13×20 Clock</string>
+    <string name="widget_description">13-часовые аналоговые часы с Цолькином, Хаабом и Длинным счётом</string>
+    <string name="clock_content_description">13-часовой аналоговый циферблат</string>
+</resources>
