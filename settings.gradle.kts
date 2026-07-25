@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ThirteenClock"
 include(":app")
+include(":launcher")
