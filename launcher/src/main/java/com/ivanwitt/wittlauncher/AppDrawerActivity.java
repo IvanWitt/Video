@@ -142,7 +142,8 @@ public class AppDrawerActivity extends Activity {
         renderList();
 
         if (pendingLaunch != null) handler.removeCallbacks(pendingLaunch);
-        if (!disableAuto && !needle.isEmpty() && visibleApps.size() == 1 && !needle.equals(lastAutoQuery)) {
+        boolean autoUnique = Ui.prefs(this).getBoolean("auto_unique", true);
+        if (autoUnique && !disableAuto && !needle.isEmpty() && visibleApps.size() == 1 && !needle.equals(lastAutoQuery)) {
             AppEntry only = visibleApps.get(0);
             lastAutoQuery = needle;
             pendingLaunch = () -> {
